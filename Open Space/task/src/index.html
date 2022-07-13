@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Open Space</title>
+    <script src="index.js"></script>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+<div class="space">
+    <div class="planet-area">
+        <img class="rocket" id="rocket" src="rocket.png">
+        <img class="planet" src="mars.png">
+    </div>
+    <div class="control-panel">
+        <div class="control-panel__inner">
+                <input id="accessPassword" type="password" placeholder="Enter password to unlock">
+                <input id="accessPasswordButton" class="unlock-ok" type="button" value="OK">
+            <div class="check-buttons">
+                <input class="check-button" type="checkbox" onchange="isReadyCheck()" disabled>
+                <input class="check-button" type="checkbox" onchange="isReadyCheck()" disabled>
+                <input class="check-button" type="checkbox" onchange="isReadyCheck()" disabled>
+                <input class="check-button" type="checkbox" onchange="isReadyCheck()" disabled>
+                <input class="check-button" type="checkbox" onchange="isReadyCheck()" disabled>
+                <input class="check-button" type="checkbox" onchange="isReadyCheck()" disabled>
+            </div>
+            <div class="levers">
+                <input class="range" type="range" onchange="isReadyCheck()" disabled>
+                <input class="range" type="range" onchange="isReadyCheck()" disabled>
+                <input class="range" type="range" onchange="isReadyCheck()" disabled>
+                <input class="range" type="range" onchange="isReadyCheck()" disabled>
+                <input class="range" type="range" onchange="isReadyCheck()" disabled>
+            </div>
+            <input type="button" value="Launch" id="launch-button" disabled>
+        </div>
+    </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,112 @@
+body {
+    background-color: black;
+}
+.space {
+    background-image: url("space.png");
+    display: flex;
+    flex-flow: column wrap;
+    overflow: hidden;
+    position: absolute;
+    width: 70%;
+    height: 100%;
+    right: 15%;
+    left: 15%;
+    background-clip: border-box;
+}
+
+.planet-area {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.planet {
+    position: absolute;
+    bottom: -15px;
+    left: -15px;
+    width: 60%;
+    height: 60%;
+}
+
+.rocket {
+    position: absolute;
+    width: 25%;
+    height: 35%;
+    bottom: 25%;
+    left: 25%;
+    overflow: auto;
+    transform: rotate(25deg);
+}
+
+.control-panel {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 50%;
+    right: 7%;
+    height: 300px;
+    width: 500px;
+    background-image: linear-gradient(45deg, #fde846 25%, #000000 25%, #000000 50%, #fde846 50%, #d6f700 75%, #000000 75%, #000000 100%);
+    background-size: 56.57px 56.57px;
+}
+
+.control-panel__inner {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    background: #2f2f2f;
+    height: 270px;
+    width: 470px;
+}
+
+.check-buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 400px;
+    height: 50px;
+}
+
+.levers {
+    display: flex;
+    width: 450px;
+    height: 130px;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.range {
+    transform: rotate(-90deg);
+    height: 150px;
+    width: 90px;
+}
+
+input[type="password"] {
+    height: 80%;
+    width: 70%;
+    border: #fde846 solid;
+    border-radius: 7px;
+    background-color: rgba(255, 255, 255, 0);
+    font-size: 100%;
+    color: #808080;
+}
+
+.unlock-ok {
+    height: 80%;
+    width: 15%;
+    border-radius: 9px;
+    background-color: #fde846;
+}
+
+#launch-button {
+    height: 40%;
+    width: 20%;
+    border-radius: 50%;
+    margin: 10px;
+    background-color: red;
+    border: white solid 2px;
+    color: white;
+    font-size: 100%;
+}
